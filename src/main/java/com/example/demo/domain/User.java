@@ -26,12 +26,36 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
+    String title;
+    String firstname;
+    String surname;
+    @OneToOne(fetch = FetchType.EAGER)
+    File photo;
+    String about;
+    String email;
+    String phone;
+    @OneToMany(fetch = FetchType.EAGER)
+    Country country;
+    String address;
+    @OneToMany(fetch = FetchType.EAGER)
+    Company company;
+    boolean isAdmin;
+    @OneToMany(fetch = FetchType.EAGER)
+    Role role;
+    @OneToMany(fetch = FetchType.EAGER)
+    Group group;
+    @OneToMany(fetch = FetchType.LAZY)
+    List<Classroom> classrooms;
+    long logged;
+    long created;
 
     @NotEmpty
     private String username;
 
     @NotEmpty
     private String password;
+
+
 
     @ElementCollection(fetch = FetchType.EAGER)
     @Builder.Default

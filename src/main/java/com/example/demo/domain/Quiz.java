@@ -1,17 +1,38 @@
 package com.example.demo.domain;
 
-import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.transaction.annotation.Transactional;
 
-public class Quiz {
-    int id;
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
+import java.util.Set;
+
+@Entity
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Transactional
+public class Quiz implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    long id;
     String name;
     String description;
     Double version;
+    @ManyToOne(fetch = FetchType.EAGER)
     Type type;
+    @ManyToOne(fetch = FetchType.EAGER)
     Language language;
+    @ManyToOne(fetch = FetchType.EAGER)
     Level level;
     int score;
-    List<Question> questions;
+    @OneToMany(fetch = FetchType.LAZY)
+    Set<Question> questions;
     Double rate;
     long created;
 }

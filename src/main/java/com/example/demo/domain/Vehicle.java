@@ -15,8 +15,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Vehicle extends AbstractAuditableEntity<User, Long> implements Serializable {
-
     @Column
     private String name;
-
 }

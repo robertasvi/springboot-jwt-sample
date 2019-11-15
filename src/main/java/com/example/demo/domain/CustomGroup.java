@@ -13,12 +13,10 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class File implements Serializable {
+public class CustomGroup implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     long id;
     String name;
-    String type;
-    String url;
-    long uploaded;
+    String created;
 }

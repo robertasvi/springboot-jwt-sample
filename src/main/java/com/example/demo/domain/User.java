@@ -7,9 +7,11 @@ import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -17,44 +19,40 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 @Entity
-@Table(name="users")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User implements UserDetails {
+@Transactional
+public class User implements UserDetails, Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
+    long id;
     String title;
     String firstname;
     String surname;
-    @OneToOne(fetch = FetchType.EAGER)
+    @NotEmpty
+    private String username;
+    @NotEmpty
+    private String password;
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     File photo;
     String about;
     String email;
     String phone;
-    @OneToMany(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     Country country;
     String address;
-    @OneToMany(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     Company company;
-    boolean isAdmin;
-    @OneToMany(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     Role role;
-    @OneToMany(fetch = FetchType.EAGER)
-    Group group;
-    @OneToMany(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    CustomGroup group;
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     List<Classroom> classrooms;
     long logged;
     long created;
-
-    @NotEmpty
-    private String username;
-
-    @NotEmpty
-    private String password;
-
 
 
     @ElementCollection(fetch = FetchType.EAGER)
@@ -93,6 +91,10 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
+        return true;
+    }
+
+    public boolean isAdmin() {
         return true;
     }
 }

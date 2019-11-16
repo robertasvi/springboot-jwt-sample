@@ -18,7 +18,7 @@ import java.util.List;
 @Transactional
 public class Material implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String name;
     @OneToOne(fetch = FetchType.EAGER)

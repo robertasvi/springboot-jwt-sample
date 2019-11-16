@@ -18,7 +18,7 @@ import java.math.BigDecimal;
 @Transactional
 public class Invoice implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     @ManyToOne(fetch = FetchType.EAGER)
     Company company;

@@ -41,6 +41,8 @@ spring:
     properties:
       # fixes Caused by: java.sql.SQLFeatureNotSupportedException: Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
       hibernate.jdbc.lob.non_contextual_creation: true
+      hibernate:
+        enable_lazy_load_no_trans: true
 
   data:
     jpa:

@@ -15,7 +15,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class File implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String name;
     String type;

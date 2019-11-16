@@ -20,7 +20,7 @@ import java.io.Serializable;
 @Transactional
 public class Language implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String name;
     String code;

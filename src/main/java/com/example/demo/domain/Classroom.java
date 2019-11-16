@@ -18,7 +18,7 @@ import java.util.List;
 @Transactional
 public class Classroom implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String name;
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)

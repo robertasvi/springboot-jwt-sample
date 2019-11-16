@@ -17,7 +17,7 @@ import java.io.Serializable;
 @Transactional
 public class Achievement implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     Course course;

@@ -19,7 +19,7 @@ import java.util.Set;
 @Transactional
 public class Tutorial implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String name;
     String description;

@@ -18,7 +18,7 @@ import java.util.List;
 @Transactional
 public class Question implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String text;
     @OneToOne(fetch = FetchType.EAGER)

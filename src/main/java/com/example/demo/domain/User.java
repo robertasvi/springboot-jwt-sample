@@ -33,7 +33,7 @@ public class User implements UserDetails, Serializable {
     String surname;
     private String username;
     private String password;
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     File photo;
     String about;
     String email;

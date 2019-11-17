@@ -31,9 +31,10 @@ public class User implements UserDetails, Serializable {
     String title;
     String firstname;
     String surname;
+    long birthday;
     private String username;
     private String password;
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "file_id")
     File photo;
     String about;

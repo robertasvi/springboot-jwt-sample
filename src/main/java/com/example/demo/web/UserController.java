@@ -1,6 +1,7 @@
 package com.example.demo.web;
 
 import com.example.demo.domain.User;
+import com.example.demo.domain.Vehicle;
 import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -43,5 +44,12 @@ public class UserController {
     @ResponseBody
     public List<User> findByCompanyId(@PathVariable long id) {
         return userService.findByCompanyId(id);
+    }
+
+    @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
+    @ResponseBody
+    public void delete(@PathVariable long id) {
+        User existed = this.userService.findById(id);
+        userService.delete(existed);
     }
 }

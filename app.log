@@ -8595,3 +8595,938 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'photo_id' in 'field
 2019-11-17 13:17:25.909 DEBUG 61418 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
 2019-11-17 13:17:25.910 DEBUG 61418 --- [http-nio-8080-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
 2019-11-17 13:17:25.910 DEBUG 61418 --- [http-nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:02:04.024  WARN 61418 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m25s823ms).
+2019-11-17 14:04:34.015  WARN 61418 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s984ms).
+2019-11-17 14:09:14.562 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/v2/api-docs'
+2019-11-17 14:09:14.564 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/v2/api-docs'
+2019-11-17 14:09:14.576 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/ui'
+2019-11-17 14:09:14.576 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/ui'
+2019-11-17 14:09:14.576 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-resources/**'
+2019-11-17 14:09:14.576 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-resources/**'
+2019-11-17 14:09:14.576 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/security'
+2019-11-17 14:09:14.576 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/security'
+2019-11-17 14:09:14.576 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-ui.html'
+2019-11-17 14:09:14.576 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-ui.html'
+2019-11-17 14:09:14.576 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/webjars/**'
+2019-11-17 14:09:14.577 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/webjars/**'
+2019-11-17 14:09:14.577 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:09:14.577 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:09:14.577 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:09:14.577 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:09:14.577 DEBUG 61418 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:09:14.577 DEBUG 61418 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:09:14.577 DEBUG 61418 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:09:14.577 DEBUG 61418 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:09:14.578 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:09:14.578 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:09:14.578 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:09:14.578 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:09:14.581 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:09:14.581 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:09:14.581 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:09:14.581 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:09:14.581 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2019-11-17 14:09:14.581 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:09:14.581 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/logout'
+2019-11-17 14:09:14.581 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'POST /logout'
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'PUT /logout'
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'POST /logout'
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'DELETE /logout'
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'PUT /logout'
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:09:14.582 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:09:14.583 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:09:14.583 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'DELETE /logout'
+2019-11-17 14:09:14.583 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:09:14.583 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:09:14.583 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:09:14.583 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@bdc8b3f0: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:09:14.584 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:09:14.584 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:09:14.584 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:09:14.584 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:09:14.584 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:09:14.584 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:09:14.584 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@bdc8b3f0: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:09:14.584 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:09:14.584 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:09:14.584 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:09:14.634 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@5742718
+2019-11-17 14:09:14.634 DEBUG 61418 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:09:14.637 DEBUG 61418 --- [http-nio-8080-exec-8] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:09:14.637 DEBUG 61418 --- [http-nio-8080-exec-8] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:09:14.660 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@5742718
+2019-11-17 14:09:14.660 DEBUG 61418 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:09:14.661 DEBUG 61418 --- [http-nio-8080-exec-6] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:09:14.661 DEBUG 61418 --- [http-nio-8080-exec-6] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:10:01.142  INFO 61418 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-17 14:10:01.175  INFO 61418 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-17 14:10:01.177  INFO 61418 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-11-17 14:10:02.054  INFO 61418 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-11-17 14:10:02.061  INFO 61418 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-11-17 14:10:17.128  INFO 64631 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on MacBook-Pro.lan with PID 64631 (/Users/robertas/GitHub/springboot-jwt-sample/target/classes started by robertas in /Users/robertas/GitHub/springboot-jwt-sample)
+2019-11-17 14:10:17.180 DEBUG 64631 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-11-17 14:10:17.182  INFO 64631 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-11-17 14:10:19.745  INFO 64631 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-17 14:10:19.978  INFO 64631 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 218ms. Found 21 repository interfaces.
+2019-11-17 14:10:21.019  INFO 64631 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dabd3953] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-17 14:10:21.087  INFO 64631 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$5a3d8685] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-17 14:10:22.097  INFO 64631 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-17 14:10:22.161  INFO 64631 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-17 14:10:22.162  INFO 64631 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-11-17 14:10:22.409  INFO 64631 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-17 14:10:22.410  INFO 64631 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5116 ms
+2019-11-17 14:10:22.970  INFO 64631 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-17 14:10:22.977  WARN 64631 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-17 14:10:23.257  INFO 64631 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-17 14:10:23.376  INFO 64631 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-17 14:10:23.508  INFO 64631 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-11-17 14:10:23.511  INFO 64631 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-17 14:10:23.761  INFO 64631 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-17 14:10:24.031  INFO 64631 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-17 14:10:24.112  INFO 64631 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-11-17 14:10:42.499  INFO 64631 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/Users/robertas/GitHub/springboot-jwt-sample/target/classes/import.sql)'
+2019-11-17 14:10:42.634  INFO 64631 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-17 14:10:45.823  WARN 64631 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/robertas/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/robertas/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+public java.util.List<com.example.demo.domain.User> com.example.demo.web.UserController.findAll()
+to {GET /user}: There is already 'userController' bean method
+public void com.example.demo.web.UserController.delete(long) mapped.
+2019-11-17 14:10:45.841  INFO 64631 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-17 14:10:45.841  INFO 64631 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-11-17 14:10:46.131  INFO 64631 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-11-17 14:10:46.148  INFO 64631 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-11-17 14:10:46.152  INFO 64631 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-17 14:10:46.170  INFO 64631 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-17 14:10:46.181 ERROR 64631 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/robertas/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/robertas/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+public java.util.List<com.example.demo.domain.User> com.example.demo.web.UserController.findAll()
+to {GET /user}: There is already 'userController' bean method
+public void com.example.demo.web.UserController.delete(long) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) [spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22) [classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/robertas/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+public java.util.List<com.example.demo.domain.User> com.example.demo.web.UserController.findAll()
+to {GET /user}: There is already 'userController' bean method
+public void com.example.demo.web.UserController.delete(long) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1467) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1431) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1322) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1209) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+public java.util.List<com.example.demo.domain.User> com.example.demo.web.UserController.findAll()
+to {GET /user}: There is already 'userController' bean method
+public void com.example.demo.web.UserController.delete(long) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1467) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1431) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1322) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1209) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+public java.util.List<com.example.demo.domain.User> com.example.demo.web.UserController.findAll()
+to {GET /user}: There is already 'userController' bean method
+public void com.example.demo.web.UserController.delete(long) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:1.8.0_112]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
+	... 50 common frames omitted
+
+2019-11-17 14:11:43.901  INFO 64742 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on MacBook-Pro.lan with PID 64742 (/Users/robertas/GitHub/springboot-jwt-sample/target/classes started by robertas in /Users/robertas/GitHub/springboot-jwt-sample)
+2019-11-17 14:11:43.909 DEBUG 64742 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-11-17 14:11:43.910  INFO 64742 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-11-17 14:11:47.827  INFO 64742 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-17 14:11:48.241  INFO 64742 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 395ms. Found 21 repository interfaces.
+2019-11-17 14:11:49.540  INFO 64742 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dcc2bdea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-17 14:11:49.608  INFO 64742 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$5c430b1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-17 14:11:51.086  INFO 64742 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-17 14:11:51.139  INFO 64742 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-17 14:11:51.140  INFO 64742 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-11-17 14:11:52.657  INFO 64742 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-17 14:11:52.658  INFO 64742 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8612 ms
+2019-11-17 14:11:53.236  INFO 64742 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-17 14:11:53.242  WARN 64742 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-17 14:11:53.497  INFO 64742 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-17 14:11:53.617  INFO 64742 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-17 14:11:53.748  INFO 64742 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-11-17 14:11:53.750  INFO 64742 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-17 14:11:53.987  INFO 64742 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-17 14:11:54.406  INFO 64742 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-17 14:11:54.487  INFO 64742 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-11-17 14:12:26.004  INFO 64742 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/Users/robertas/GitHub/springboot-jwt-sample/target/classes/import.sql)'
+2019-11-17 14:12:26.210  INFO 64742 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-17 14:12:30.687  INFO 64742 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-17 14:12:31.267  INFO 64742 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-17 14:12:32.565 DEBUG 64742 --- [main] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration=org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration$$EnhancerBySpringCGLIB$$fa51e81f@2748bd6c}
+2019-11-17 14:12:32.678  INFO 64742 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/v2/api-docs'], []
+2019-11-17 14:12:32.678  INFO 64742 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/configuration/ui'], []
+2019-11-17 14:12:32.678  INFO 64742 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+2019-11-17 14:12:32.678  INFO 64742 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/configuration/security'], []
+2019-11-17 14:12:32.679  INFO 64742 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+2019-11-17 14:12:32.679  INFO 64742 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2019-11-17 14:12:32.834  INFO 64742 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ffa8126, org.springframework.security.web.context.SecurityContextPersistenceFilter@247a8411, org.springframework.security.web.header.HeaderWriterFilter@242ebd3b, org.springframework.web.filter.CorsFilter@23ee70a7, org.springframework.security.web.authentication.logout.LogoutFilter@359a2c96, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@820b78a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f1e1d66, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47f416d0, org.springframework.security.web.session.SessionManagementFilter@2569afda, org.springframework.security.web.access.ExceptionTranslationFilter@7a2ffb0b]
+2019-11-17 14:12:33.118  INFO 64742 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-17 14:12:33.165  INFO 64742 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-17 14:12:33.230  INFO 64742 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-17 14:12:33.529  INFO 64742 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_1
+2019-11-17 14:12:33.536  INFO 64742 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_2
+2019-11-17 14:12:33.546  INFO 64742 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_3
+2019-11-17 14:12:33.554  INFO 64742 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_4
+2019-11-17 14:12:33.562  INFO 64742 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_5
+2019-11-17 14:12:33.701  INFO 64742 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPUT_1
+2019-11-17 14:12:33.715  INFO 64742 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_6
+2019-11-17 14:12:33.728  INFO 64742 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByIdUsingGET_1
+2019-11-17 14:12:33.751  INFO 64742 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-17 14:12:33.813  INFO 64742 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2019-11-17 14:12:33.944  INFO 64742 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-17 14:12:33.959  INFO 64742 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 51.34 seconds (JVM running for 52.417)
+2019-11-17 14:13:39.418  INFO 64742 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-17 14:13:39.432  INFO 64742 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-17 14:13:39.501  INFO 64742 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 68 ms
+2019-11-17 14:13:39.537 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/v2/api-docs'
+2019-11-17 14:13:39.538 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/ui'
+2019-11-17 14:13:39.538 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-resources/**'
+2019-11-17 14:13:39.538 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/security'
+2019-11-17 14:13:39.538 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-ui.html'
+2019-11-17 14:13:39.539 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/webjars/**'
+2019-11-17 14:13:39.540 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:13:39.543 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:13:39.545 DEBUG 64742 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:13:39.545 DEBUG 64742 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:13:39.549 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:13:39.606 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:13:39.607 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/v2/api-docs'
+2019-11-17 14:13:39.617 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/ui'
+2019-11-17 14:13:39.617 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-resources/**'
+2019-11-17 14:13:39.617 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/security'
+2019-11-17 14:13:39.617 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-ui.html'
+2019-11-17 14:13:39.617 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/webjars/**'
+2019-11-17 14:13:39.617 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:13:39.618 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:13:39.618 DEBUG 64742 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:13:39.619 DEBUG 64742 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:13:39.619 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:13:39.619 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:13:39.639 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:13:39.639 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:13:39.639 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:13:39.639 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:13:39.639 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/logout'
+2019-11-17 14:13:39.640 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:13:39.641 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'POST /logout'
+2019-11-17 14:13:39.639 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2019-11-17 14:13:39.641 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:13:39.641 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:13:39.641 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'PUT /logout'
+2019-11-17 14:13:39.642 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'POST /logout'
+2019-11-17 14:13:39.642 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:13:39.642 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:13:39.642 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'DELETE /logout'
+2019-11-17 14:13:39.642 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'PUT /logout'
+2019-11-17 14:13:39.642 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:13:39.643 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:13:39.643 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:13:39.643 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'DELETE /logout'
+2019-11-17 14:13:39.643 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:13:39.643 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:13:39.643 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:13:39.643 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:13:39.643 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:13:39.644 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:13:39.647 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:13:39.647 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:13:39.651 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@4a486d41: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:13:39.651 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:13:39.651 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@4a486d41: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:13:39.651 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:13:39.652 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:13:39.652 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:13:39.652 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:13:39.654 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:13:39.820  INFO 64742 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-17 14:13:40.618 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@6dd712f2
+2019-11-17 14:13:40.618 DEBUG 64742 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:13:40.628 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:13:40.633 DEBUG 64742 --- [http-nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:13:40.642 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@6dd712f2
+2019-11-17 14:13:40.642 DEBUG 64742 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:13:40.644 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:13:40.645 DEBUG 64742 --- [http-nio-8080-exec-2] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:14:07.773 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/v2/api-docs'
+2019-11-17 14:14:07.779 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/v2/api-docs'
+2019-11-17 14:14:07.789 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/ui'
+2019-11-17 14:14:07.789 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/ui'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-resources/**'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-resources/**'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/security'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/security'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-ui.html'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-ui.html'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/webjars/**'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/webjars/**'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:14:07.790 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:14:07.791 DEBUG 64742 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:14:07.791 DEBUG 64742 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:14:07.791 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:14:07.791 DEBUG 64742 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:14:07.791 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:14:07.791 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:14:07.791 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:14:07.792 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:14:07.792 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:14:07.792 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:14:07.792 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:14:07.792 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/logout'
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'POST /logout'
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'POST /logout'
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'PUT /logout'
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'PUT /logout'
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'DELETE /logout'
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'DELETE /logout'
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:14:07.793 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@4a486d41: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@4a486d41: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:14:07.794 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/1 reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:14:07.818 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@6dd712f2
+2019-11-17 14:14:07.818 DEBUG 64742 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:14:07.819 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:14:07.819 DEBUG 64742 --- [http-nio-8080-exec-4] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:14:07.853 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@6dd712f2
+2019-11-17 14:14:07.853 DEBUG 64742 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:14:07.859 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:14:07.860 DEBUG 64742 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:15:33.894 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/v2/api-docs'
+2019-11-17 14:15:33.900 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/v2/api-docs'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/ui'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/ui'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-resources/**'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-resources/**'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/security'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/security'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-ui.html'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-ui.html'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/webjars/**'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/webjars/**'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:15:33.919 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:15:33.920 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:15:33.920 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:15:33.920 DEBUG 64742 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:15:33.920 DEBUG 64742 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:15:33.920 DEBUG 64742 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:15:33.920 DEBUG 64742 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:15:33.920 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:15:33.920 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:15:33.920 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:15:33.920 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:15:33.921 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:15:33.921 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/logout'
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'POST /logout'
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'POST /logout'
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'PUT /logout'
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'PUT /logout'
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'DELETE /logout'
+2019-11-17 14:15:33.922 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'DELETE /logout'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@4a486d41: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@4a486d41: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:15:33.923 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user/1 reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:15:33.924 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:15:33.938 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@6dd712f2
+2019-11-17 14:15:33.939 DEBUG 64742 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:15:33.940 DEBUG 64742 --- [http-nio-8080-exec-8] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:15:33.940 DEBUG 64742 --- [http-nio-8080-exec-8] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:15:33.957 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@6dd712f2
+2019-11-17 14:15:33.957 DEBUG 64742 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:15:33.958 DEBUG 64742 --- [http-nio-8080-exec-7] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:15:33.959 DEBUG 64742 --- [http-nio-8080-exec-7] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:17:17.214 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/v2/api-docs'
+2019-11-17 14:17:17.219 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/v2/api-docs'
+2019-11-17 14:17:17.220 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/ui'
+2019-11-17 14:17:17.220 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/ui'
+2019-11-17 14:17:17.220 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-resources/**'
+2019-11-17 14:17:17.220 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-resources/**'
+2019-11-17 14:17:17.220 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/security'
+2019-11-17 14:17:17.220 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/security'
+2019-11-17 14:17:17.220 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-ui.html'
+2019-11-17 14:17:17.220 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-ui.html'
+2019-11-17 14:17:17.220 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/webjars/**'
+2019-11-17 14:17:17.220 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/webjars/**'
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:17:17.221 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:17:17.222 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:17:17.222 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:17:17.223 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/logout'
+2019-11-17 14:17:17.223 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:17:17.223 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'POST /logout'
+2019-11-17 14:17:17.223 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:17:17.223 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'PUT /logout'
+2019-11-17 14:17:17.223 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:17:17.223 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:17:17.223 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:17:17.223 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:17:17.223 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'DELETE /logout'
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'POST /logout'
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'PUT /logout'
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'DELETE /logout'
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:17:17.224 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@4a486d41: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:17:17.225 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:17:17.225 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:17:17.225 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user/1 reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:17:17.225 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:17:17.228 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:17:17.229 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:17:17.229 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@4a486d41: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:17:17.229 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:17:17.229 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:17:17.229 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:17:17.255 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@6dd712f2
+2019-11-17 14:17:17.256 DEBUG 64742 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:17:17.257 DEBUG 64742 --- [http-nio-8080-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:17:17.257 DEBUG 64742 --- [http-nio-8080-exec-2] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:17:17.277 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@6dd712f2
+2019-11-17 14:17:17.277 DEBUG 64742 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:17:17.278 DEBUG 64742 --- [http-nio-8080-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:17:17.279 DEBUG 64742 --- [http-nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:17:22.218 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/v2/api-docs'
+2019-11-17 14:17:22.219 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/configuration/ui'
+2019-11-17 14:17:22.220 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/swagger-resources/**'
+2019-11-17 14:17:22.220 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/configuration/security'
+2019-11-17 14:17:22.220 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/swagger-ui.html'
+2019-11-17 14:17:22.220 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/webjars/**'
+2019-11-17 14:17:22.220 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/2 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:17:22.220 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/2 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:17:22.220 DEBUG 64742 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:17:22.220 DEBUG 64742 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:17:22.221 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/2 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:17:22.221 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user/2 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:17:22.224 DEBUG 64742 --- [http-nio-8080-exec-4] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@6dd712f2
+2019-11-17 14:17:22.224 DEBUG 64742 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:17:22.224 DEBUG 64742 --- [http-nio-8080-exec-4] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:17:22.252 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/v2/api-docs'
+2019-11-17 14:17:22.252 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/configuration/ui'
+2019-11-17 14:17:22.252 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/swagger-resources/**'
+2019-11-17 14:17:22.252 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/configuration/security'
+2019-11-17 14:17:22.252 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/swagger-ui.html'
+2019-11-17 14:17:22.252 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/webjars/**'
+2019-11-17 14:17:22.253 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:17:22.253 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:17:22.253 DEBUG 64742 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:17:22.253 DEBUG 64742 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:17:22.253 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:17:22.253 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:17:22.255 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:17:22.255 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:17:22.255 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'DELETE /user/2' doesn't match 'GET /logout'
+2019-11-17 14:17:22.255 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:17:22.255 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'DELETE /user/2' doesn't match 'POST /logout'
+2019-11-17 14:17:22.256 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:17:22.256 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'DELETE /user/2' doesn't match 'PUT /logout'
+2019-11-17 14:17:22.256 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:17:22.256 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/logout'
+2019-11-17 14:17:22.257 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:17:22.257 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:17:22.257 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:17:22.257 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:17:22.257 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:17:22.258 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@4a486d41: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:17:22.258 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:17:22.258 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:17:22.258 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user/2 reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:17:22.273 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@6dd712f2
+2019-11-17 14:17:22.274 DEBUG 64742 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:17:22.275  WARN 64742 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2019-11-17 14:17:22.275 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:17:22.275 DEBUG 64742 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:17:22.282 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/v2/api-docs'
+2019-11-17 14:17:22.283 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/configuration/ui'
+2019-11-17 14:17:22.283 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/swagger-resources/**'
+2019-11-17 14:17:22.283 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/configuration/security'
+2019-11-17 14:17:22.283 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/swagger-ui.html'
+2019-11-17 14:17:22.283 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/webjars/**'
+2019-11-17 14:17:22.283 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:17:22.283 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:17:22.283 DEBUG 64742 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:17:22.284 DEBUG 64742 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:17:22.284 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:17:22.284 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:17:22.284 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:17:22.284 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:17:22.284 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'DELETE /error' doesn't match 'GET /logout'
+2019-11-17 14:17:22.284 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:17:22.284 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'DELETE /error' doesn't match 'POST /logout'
+2019-11-17 14:17:22.285 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:17:22.285 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'DELETE /error' doesn't match 'PUT /logout'
+2019-11-17 14:17:22.285 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:17:22.285 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/error'; against '/logout'
+2019-11-17 14:17:22.285 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:17:22.285 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:17:22.285 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:17:22.285 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:17:22.285 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:17:22.286 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@4a486d41: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:17:22.286 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:17:22.286 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:17:22.286 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /error reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:17:22.354 DEBUG 64742 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:17:22.359 DEBUG 64742 --- [http-nio-8080-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:17:22.359 DEBUG 64742 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:17:45.676  INFO 64742 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-17 14:17:45.693  INFO 64742 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-17 14:17:45.694  INFO 64742 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-11-17 14:17:46.034  INFO 64742 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-11-17 14:17:46.053  INFO 64742 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-11-17 14:17:56.632  INFO 65247 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on MacBook-Pro.lan with PID 65247 (/Users/robertas/GitHub/springboot-jwt-sample/target/classes started by robertas in /Users/robertas/GitHub/springboot-jwt-sample)
+2019-11-17 14:17:56.636 DEBUG 65247 --- [main] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-11-17 14:17:56.637  INFO 65247 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-11-17 14:17:59.706  INFO 65247 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-17 14:17:59.958  INFO 65247 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 234ms. Found 21 repository interfaces.
+2019-11-17 14:18:00.882  INFO 65247 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4068b303] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-17 14:18:00.939  INFO 65247 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$bfe90035] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-17 14:18:01.922  INFO 65247 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-17 14:18:01.986  INFO 65247 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-17 14:18:01.988  INFO 65247 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-11-17 14:18:02.212  INFO 65247 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-17 14:18:02.212  INFO 65247 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5390 ms
+2019-11-17 14:18:02.723  INFO 65247 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-17 14:18:02.730  WARN 65247 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-17 14:18:03.005  INFO 65247 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-17 14:18:03.148  INFO 65247 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-17 14:18:03.262  INFO 65247 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-11-17 14:18:03.265  INFO 65247 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-17 14:18:03.487  INFO 65247 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-17 14:18:03.757  INFO 65247 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-17 14:18:03.848  INFO 65247 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-11-17 14:18:19.635  INFO 65247 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/Users/robertas/GitHub/springboot-jwt-sample/target/classes/import.sql)'
+2019-11-17 14:18:19.667  INFO 65247 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-17 14:18:23.764  INFO 65247 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-17 14:18:24.152  INFO 65247 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-17 14:18:24.993 DEBUG 65247 --- [main] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration=org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration$$EnhancerBySpringCGLIB$$5df7dd38@64a4739}
+2019-11-17 14:18:25.079  INFO 65247 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/v2/api-docs'], []
+2019-11-17 14:18:25.079  INFO 65247 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/configuration/ui'], []
+2019-11-17 14:18:25.079  INFO 65247 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+2019-11-17 14:18:25.080  INFO 65247 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/configuration/security'], []
+2019-11-17 14:18:25.080  INFO 65247 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+2019-11-17 14:18:25.080  INFO 65247 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2019-11-17 14:18:25.186  INFO 65247 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23ee70a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c05f83b, org.springframework.security.web.header.HeaderWriterFilter@5d2bc446, org.springframework.web.filter.CorsFilter@47f416d0, org.springframework.security.web.authentication.logout.LogoutFilter@1dbf727a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a9ac8b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3cd28235, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21be80f6, org.springframework.security.web.session.SessionManagementFilter@28dd8786, org.springframework.security.web.access.ExceptionTranslationFilter@13cae908]
+2019-11-17 14:18:25.404  INFO 65247 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-17 14:18:25.450  INFO 65247 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-17 14:18:25.529  INFO 65247 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-17 14:18:25.921  INFO 65247 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_1
+2019-11-17 14:18:25.932  INFO 65247 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_2
+2019-11-17 14:18:25.939  INFO 65247 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_3
+2019-11-17 14:18:25.949  INFO 65247 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_4
+2019-11-17 14:18:25.959  INFO 65247 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_5
+2019-11-17 14:18:26.233  INFO 65247 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPUT_1
+2019-11-17 14:18:26.273  INFO 65247 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_6
+2019-11-17 14:18:26.299  INFO 65247 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByIdUsingGET_1
+2019-11-17 14:18:26.311  INFO 65247 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-17 14:18:26.353  INFO 65247 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2019-11-17 14:18:26.496  INFO 65247 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-17 14:18:26.504  INFO 65247 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 30.994 seconds (JVM running for 32.118)
+2019-11-17 14:18:39.438  INFO 65247 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-17 14:18:39.491  INFO 65247 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-17 14:18:39.625  INFO 65247 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 134 ms
+2019-11-17 14:18:39.804 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/v2/api-docs'
+2019-11-17 14:18:39.805 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/ui'
+2019-11-17 14:18:39.806 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-resources/**'
+2019-11-17 14:18:39.806 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/security'
+2019-11-17 14:18:39.807 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-ui.html'
+2019-11-17 14:18:39.808 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/webjars/**'
+2019-11-17 14:18:39.809 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:18:39.812 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:18:39.809 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/v2/api-docs'
+2019-11-17 14:18:39.813 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/ui'
+2019-11-17 14:18:39.813 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-resources/**'
+2019-11-17 14:18:39.813 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/security'
+2019-11-17 14:18:39.813 DEBUG 65247 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:18:39.813 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-ui.html'
+2019-11-17 14:18:39.814 DEBUG 65247 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:18:39.814 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/webjars/**'
+2019-11-17 14:18:39.814 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:18:39.814 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:18:39.814 DEBUG 65247 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:18:39.814 DEBUG 65247 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:18:39.819 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:18:39.820 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:18:39.821 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:18:39.822 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:18:39.847 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:18:39.848 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:18:39.848 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:18:39.848 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:18:39.848 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/logout'
+2019-11-17 14:18:39.848 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:18:39.849 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'POST /logout'
+2019-11-17 14:18:39.849 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:18:39.849 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'PUT /logout'
+2019-11-17 14:18:39.849 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:18:39.849 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'DELETE /logout'
+2019-11-17 14:18:39.849 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:18:39.849 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:18:39.848 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2019-11-17 14:18:39.850 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:18:39.850 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:18:39.850 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:18:39.850 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'POST /logout'
+2019-11-17 14:18:39.850 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:18:39.851 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'PUT /logout'
+2019-11-17 14:18:39.851 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:18:39.851 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'DELETE /logout'
+2019-11-17 14:18:39.851 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:18:39.853 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:18:39.854 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:18:39.854 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:18:39.855 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:18:39.856 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:18:39.858 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@cc134ff8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:18:39.858 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:18:39.858 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@cc134ff8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:18:39.858 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:18:39.858 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:18:39.859 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:18:39.859 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /user reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:18:39.859 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /user/1 reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:18:40.046  INFO 65247 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-17 14:18:40.591 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@16ace2fd
+2019-11-17 14:18:40.592 DEBUG 65247 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:18:40.602 DEBUG 65247 --- [http-nio-8080-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:18:40.603 DEBUG 65247 --- [http-nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:18:40.688 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@16ace2fd
+2019-11-17 14:18:40.690 DEBUG 65247 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:18:40.691 DEBUG 65247 --- [http-nio-8080-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:18:40.691 DEBUG 65247 --- [http-nio-8080-exec-2] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:18:49.028 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/v2/api-docs'
+2019-11-17 14:18:49.029 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/ui'
+2019-11-17 14:18:49.029 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-resources/**'
+2019-11-17 14:18:49.029 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/security'
+2019-11-17 14:18:49.029 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-ui.html'
+2019-11-17 14:18:49.029 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/webjars/**'
+2019-11-17 14:18:49.029 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:18:49.030 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:18:49.030 DEBUG 65247 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:18:49.030 DEBUG 65247 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:18:49.030 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:18:49.030 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : /user at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:18:49.032 DEBUG 65247 --- [http-nio-8080-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@16ace2fd
+2019-11-17 14:18:49.032 DEBUG 65247 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:18:49.032 DEBUG 65247 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:18:49.071 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/v2/api-docs'
+2019-11-17 14:18:49.071 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/ui'
+2019-11-17 14:18:49.071 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-resources/**'
+2019-11-17 14:18:49.071 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/security'
+2019-11-17 14:18:49.071 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-ui.html'
+2019-11-17 14:18:49.072 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/webjars/**'
+2019-11-17 14:18:49.072 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:18:49.072 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:18:49.072 DEBUG 65247 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:18:49.072 DEBUG 65247 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:18:49.072 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:18:49.072 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:18:49.073 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:18:49.074 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:18:49.074 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /user' doesn't match 'GET /logout'
+2019-11-17 14:18:49.074 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:18:49.074 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /user' doesn't match 'POST /logout'
+2019-11-17 14:18:49.074 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:18:49.074 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2019-11-17 14:18:49.074 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:18:49.074 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /user' doesn't match 'DELETE /logout'
+2019-11-17 14:18:49.074 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:18:49.074 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:18:49.075 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:18:49.075 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:18:49.075 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:18:49.075 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@cc134ff8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:18:49.075 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:18:49.075 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:18:49.075 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : /user reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:18:49.249 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@16ace2fd
+2019-11-17 14:18:49.251 DEBUG 65247 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:18:49.256 DEBUG 65247 --- [http-nio-8080-exec-4] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:18:49.256 DEBUG 65247 --- [http-nio-8080-exec-4] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:18:54.804 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/v2/api-docs'
+2019-11-17 14:18:54.805 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/configuration/ui'
+2019-11-17 14:18:54.805 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/swagger-resources/**'
+2019-11-17 14:18:54.805 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/configuration/security'
+2019-11-17 14:18:54.805 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/swagger-ui.html'
+2019-11-17 14:18:54.805 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/webjars/**'
+2019-11-17 14:18:54.805 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : /user/2 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:18:54.805 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : /user/2 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:18:54.805 DEBUG 65247 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:18:54.806 DEBUG 65247 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:18:54.806 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : /user/2 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:18:54.806 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : /user/2 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:18:54.807 DEBUG 65247 --- [http-nio-8080-exec-5] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@16ace2fd
+2019-11-17 14:18:54.807 DEBUG 65247 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:18:54.807 DEBUG 65247 --- [http-nio-8080-exec-5] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:18:54.826 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/v2/api-docs'
+2019-11-17 14:18:54.826 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/configuration/ui'
+2019-11-17 14:18:54.826 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/swagger-resources/**'
+2019-11-17 14:18:54.826 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/configuration/security'
+2019-11-17 14:18:54.826 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/swagger-ui.html'
+2019-11-17 14:18:54.826 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/webjars/**'
+2019-11-17 14:18:54.827 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:18:54.827 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:18:54.827 DEBUG 65247 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:18:54.827 DEBUG 65247 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:18:54.827 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:18:54.827 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:18:54.828 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:18:54.829 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:18:54.829 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'DELETE /user/2' doesn't match 'GET /logout'
+2019-11-17 14:18:54.829 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:18:54.829 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'DELETE /user/2' doesn't match 'POST /logout'
+2019-11-17 14:18:54.829 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:18:54.829 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'DELETE /user/2' doesn't match 'PUT /logout'
+2019-11-17 14:18:54.830 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:18:54.830 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/2'; against '/logout'
+2019-11-17 14:18:54.830 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:18:54.830 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:18:54.830 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:18:54.830 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:18:54.830 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:18:54.831 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@cc134ff8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:18:54.831 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:18:54.831 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:18:54.831 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : /user/2 reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:18:54.934 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:18:54.935 DEBUG 65247 --- [http-nio-8080-exec-6] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@16ace2fd
+2019-11-17 14:18:54.936 DEBUG 65247 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:18:54.936 DEBUG 65247 --- [http-nio-8080-exec-6] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:18:54.970 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/v2/api-docs'
+2019-11-17 14:18:54.971 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/ui'
+2019-11-17 14:18:54.971 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-resources/**'
+2019-11-17 14:18:54.971 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/security'
+2019-11-17 14:18:54.971 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-ui.html'
+2019-11-17 14:18:54.971 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/webjars/**'
+2019-11-17 14:18:54.971 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:18:54.971 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:18:54.972 DEBUG 65247 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:18:54.972 DEBUG 65247 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:18:54.972 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:18:54.972 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'POST /logout'
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'PUT /logout'
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'DELETE /logout'
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:18:54.973 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:18:54.974 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:18:54.974 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:18:54.974 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:18:54.974 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@cc134ff8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:18:54.974 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:18:54.974 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:18:54.974 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /user reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:18:55.024 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@16ace2fd
+2019-11-17 14:18:55.024 DEBUG 65247 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:18:55.025 DEBUG 65247 --- [http-nio-8080-exec-7] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:18:55.025 DEBUG 65247 --- [http-nio-8080-exec-7] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:19:05.648 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/v2/api-docs'
+2019-11-17 14:19:05.654 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/v2/api-docs'
+2019-11-17 14:19:05.661 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/ui'
+2019-11-17 14:19:05.661 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/ui'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-resources/**'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-resources/**'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/configuration/security'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/configuration/security'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/swagger-ui.html'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/swagger-ui.html'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/webjars/**'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/webjars/**'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 at position 1 of 10 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user at position 2 of 10 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:19:05.662 DEBUG 65247 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2019-11-17 14:19:05.663 DEBUG 65247 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:19:05.663 DEBUG 65247 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2019-11-17 14:19:05.663 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:19:05.663 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user at position 3 of 10 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-11-17 14:19:05.663 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:19:05.663 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user at position 4 of 10 in additional filter chain; firing Filter: 'CorsFilter'
+2019-11-17 14:19:05.664 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:19:05.664 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:19:05.664 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user'; against '/logout'
+2019-11-17 14:19:05.664 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:19:05.664 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'POST /logout'
+2019-11-17 14:19:05.664 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:19:05.664 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'PUT /logout'
+2019-11-17 14:19:05.664 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user' doesn't match 'DELETE /logout'
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 at position 5 of 10 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/user/1'; against '/logout'
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'POST /logout'
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@cc134ff8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'PUT /logout'
+2019-11-17 14:19:05.665 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-11-17 14:19:05.666 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:19:05.666 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : /user reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:19:05.666 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /user/1' doesn't match 'DELETE /logout'
+2019-11-17 14:19:05.666 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-11-17 14:19:05.666 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 at position 6 of 10 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-11-17 14:19:05.666 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2019-11-17 14:19:05.666 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 at position 7 of 10 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-11-17 14:19:05.666 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 at position 8 of 10 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-11-17 14:19:05.666 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@cc134ff8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2019-11-17 14:19:05.667 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 at position 9 of 10 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-11-17 14:19:05.667 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 at position 10 of 10 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-11-17 14:19:05.667 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : /user/1 reached end of additional filter chain; proceeding with original chain
+2019-11-17 14:19:05.691 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@16ace2fd
+2019-11-17 14:19:05.691 DEBUG 65247 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:19:05.693 DEBUG 65247 --- [http-nio-8080-exec-9] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:19:05.693 DEBUG 65247 --- [http-nio-8080-exec-9] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-11-17 14:19:05.724 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@16ace2fd
+2019-11-17 14:19:05.724 DEBUG 65247 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2019-11-17 14:19:05.725 DEBUG 65247 --- [http-nio-8080-exec-8] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-11-17 14:19:05.725 DEBUG 65247 --- [http-nio-8080-exec-8] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed

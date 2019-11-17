@@ -4,4 +4,6 @@ import com.example.demo.domain.Country;
 import com.example.demo.domain.CustomGroup;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CustomGroupRepository  extends JpaRepository<CustomGroup, Long> {}
+public interface CustomGroupRepository  extends JpaRepository<CustomGroup, Long> {
+    CustomGroup findById(long id);
+}

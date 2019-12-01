@@ -24,13 +24,6 @@ public class Quiz implements Serializable {
     String name;
     String description;
     Double version;
-    @ManyToOne(fetch = FetchType.EAGER)
-    Type type;
-    @ManyToOne(fetch = FetchType.EAGER)
-    Language language;
-    @ManyToOne(fetch = FetchType.EAGER)
-    Level level;
-    int score;
     @OneToMany(fetch = FetchType.LAZY)
     Set<Question> questions;
     Double rate;

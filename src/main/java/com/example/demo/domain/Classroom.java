@@ -24,6 +24,7 @@ public class Classroom implements Serializable {
     String description;
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     Course course;
+    int score;
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     List<User> enrolled;
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

@@ -24,12 +24,6 @@ public class Tutorial implements Serializable {
     String name;
     String description;
     Double version;
-    @ManyToOne(fetch = FetchType.EAGER)
-    Language language;
-    @ManyToOne(fetch = FetchType.EAGER)
-    Level level;
-    @ManyToOne(fetch = FetchType.EAGER)
-    Type type;
     @OneToMany(fetch = FetchType.LAZY)
     Set<Material> material;
     Double rate;

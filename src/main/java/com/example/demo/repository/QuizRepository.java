@@ -1,7 +1,11 @@
 package com.example.demo.repository;
 
-import com.example.demo.domain.Country;
 import com.example.demo.domain.Quiz;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface QuizRepository  extends JpaRepository<Quiz, Long> {}
+import java.util.List;
+
+public interface QuizRepository  extends JpaRepository<Quiz, Long> {
+    Quiz findById(long id);
+    List<Quiz> findAllByOrderByIdDesc();
+}

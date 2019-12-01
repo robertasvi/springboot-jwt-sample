@@ -21,12 +21,7 @@ public class Classroom implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String name;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    Type type;
-    int capacity;
     String description;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    Language language;
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     Course course;
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

@@ -22,7 +22,7 @@ public class Classroom implements Serializable {
     long id;
     String name;
     String description;
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     Course course;
     int score;
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

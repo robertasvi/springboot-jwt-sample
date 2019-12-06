@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
@@ -16,15 +16,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Transactional
-public class Material implements Serializable {
+public class Enrolled implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
-    String name;
-    String media;
-    @OneToMany(fetch = FetchType.EAGER)
-    List<Episode> episodes;
-    String type;
-    Double size;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    @JoinColumn(name = "classroom_id")
+    Classroom classroom;
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    Set<User> users;
     long created;
 }

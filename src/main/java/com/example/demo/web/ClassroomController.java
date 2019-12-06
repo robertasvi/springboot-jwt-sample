@@ -1,11 +1,13 @@
 package com.example.demo.web;
 
 import com.example.demo.domain.Classroom;
+import com.example.demo.domain.Enrolled;
 import com.example.demo.service.ClassroomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Set;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -32,6 +34,13 @@ public class ClassroomController {
     public Classroom findById(@PathVariable long id) {
         return classroomService.findById(id);
     }
+
+    @RequestMapping(value="/enrolled/{id}", method=RequestMethod.GET)
+    @ResponseBody
+    public Enrolled findByEnrolledId(@PathVariable long id) {
+        return classroomService.findByClassroomId(id);
+    }
+
 
     @RequestMapping(method=RequestMethod.GET)
     @ResponseBody

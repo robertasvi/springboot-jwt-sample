@@ -10,7 +10,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -34,15 +33,13 @@ public class User implements UserDetails, Serializable {
     long birthday;
     private String username;
     private String password;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
-    @JoinColumn(name = "file_id")
-    File photo;
+    String photo;
     String about;
     String email;
     String phone;
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "language_id")
-    Language language;
+    Language language; // Handled from UI preference
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "country_id")
     Country country;
@@ -56,8 +53,6 @@ public class User implements UserDetails, Serializable {
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "group_id")
     CustomGroup group;
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
-    List<Classroom> classrooms;
     long logged;
     long created;
 

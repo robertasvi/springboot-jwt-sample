@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
@@ -25,10 +25,8 @@ public class Classroom implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     Course course;
     int score;
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    List<User> enrolled;
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    List<Assignment> assignments;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    Assignment assignment;
     Double rate;
     long created;
 }

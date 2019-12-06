@@ -20,12 +20,8 @@ public class Course implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String name;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    Language language;
     String author;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
-    @JoinColumn(name = "file_id")
-    File cover;
+    String cover;
     String description;
     Double version;
     boolean isSupported;

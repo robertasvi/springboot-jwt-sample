@@ -20,10 +20,12 @@ public class Quiz implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    Course course;
     String name;
     String description;
     Double version;
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     Set<Question> questions;
     Double rate;
     long created;

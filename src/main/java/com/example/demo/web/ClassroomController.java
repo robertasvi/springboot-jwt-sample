@@ -54,4 +54,10 @@ public class ClassroomController {
         Classroom existed = this.classroomService.findById(id);
         classroomService.delete(existed);
     }
+
+    @RequestMapping(value="/enrolled/{id}/count", method=RequestMethod.GET)
+    @ResponseBody
+    public long countEnrolledUsers(@PathVariable long id) {
+        return classroomService.countEnrolledUsers(id);
+    }
 }

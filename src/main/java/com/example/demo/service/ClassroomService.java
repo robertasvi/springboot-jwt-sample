@@ -35,6 +35,10 @@ public class ClassroomService {
         return enrolledRepository.findByClassroomId(id);
     };
 
+    public long countEnrolledUsers(long id) {
+        return enrolledRepository.countEnrolledUsers(id);
+    };
+
     public List<Classroom> findAll() {
         return classroomRepository.findAllByOrderByIdDesc();
     };

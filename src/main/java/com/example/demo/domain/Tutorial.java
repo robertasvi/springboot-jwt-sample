@@ -20,11 +20,13 @@ public class Tutorial implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    Course course;
     String name;
     String description;
     Double version;
-    @OneToMany(fetch = FetchType.LAZY)
-    Set<Material> material;
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    Set<Material> materials;
     Double rate;
     long created;
 }

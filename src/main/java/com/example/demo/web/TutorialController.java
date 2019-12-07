@@ -1,5 +1,6 @@
 package com.example.demo.web;
 
+import com.example.demo.domain.Episode;
 import com.example.demo.domain.Tutorial;
 import com.example.demo.service.TutorialService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,18 @@ public class TutorialController {
     @ResponseBody
     public Tutorial findById(@PathVariable long id) {
         return tutorialService.findById(id);
+    }
+
+    @RequestMapping(value="/course/{id}", method=RequestMethod.GET)
+    @ResponseBody
+    public Tutorial findByCourseId(@PathVariable long id) {
+        return tutorialService.findByCourseId(id);
+    }
+
+    @RequestMapping(value="/material/{id}/episodes", method=RequestMethod.GET)
+    @ResponseBody
+    public List<Episode> findByMaterialId(@PathVariable long id) {
+        return tutorialService.findByMaterialId(id);
     }
 
     @RequestMapping(method=RequestMethod.GET)

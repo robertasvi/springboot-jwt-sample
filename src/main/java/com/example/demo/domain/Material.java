@@ -22,8 +22,6 @@ public class Material implements Serializable {
     long id;
     String name;
     String media;
-    @OneToMany(fetch = FetchType.EAGER)
-    List<Episode> episodes;
     String type;
     Double size;
     long created;

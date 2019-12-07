@@ -25,8 +25,8 @@ public class Classroom implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     Course course;
     int score;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    Assignment assignment;
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    Set<Assignment> assignments;
     Double rate;
     long created;
 }

@@ -25,6 +25,10 @@ public class QuizService {
         return quizRepository.findById(id);
     };
 
+    public Quiz findByCourseId(long id) {
+        return quizRepository.findByCourseId(id);
+    };
+
     public List<Quiz> findAll() {
         return quizRepository.findAllByOrderByIdDesc();
     };

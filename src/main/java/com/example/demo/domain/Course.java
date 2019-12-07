@@ -25,10 +25,6 @@ public class Course implements Serializable {
     String description;
     Double version;
     boolean isSupported;
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    Tutorial tutorial;
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    Quiz quiz;
     Double price;
     Double rate;
     long created;

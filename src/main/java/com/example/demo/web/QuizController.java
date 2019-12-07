@@ -33,6 +33,12 @@ public class QuizController {
         return quizService.findById(id);
     }
 
+    @RequestMapping(value="/course/{id}", method=RequestMethod.GET)
+    @ResponseBody
+    public Quiz findByCourseId(@PathVariable long id) {
+        return quizService.findByCourseId(id);
+    }
+
     @RequestMapping(method=RequestMethod.GET)
     @ResponseBody
     public List<Quiz> findAll() {

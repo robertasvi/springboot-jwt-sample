@@ -1,6 +1,8 @@
 package com.example.demo.service;
 
+import com.example.demo.domain.Classroom;
 import com.example.demo.domain.Quiz;
+import com.example.demo.dto.Rate;
 import com.example.demo.repository.QuizRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,4 +34,8 @@ public class QuizService {
     public List<Quiz> findAll() {
         return quizRepository.findAllByOrderByIdDesc();
     };
+
+    public Quiz rate(Rate rate) {
+        return quizRepository.rate();
+    }
 }

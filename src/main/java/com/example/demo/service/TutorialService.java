@@ -1,7 +1,9 @@
 package com.example.demo.service;
 
+import com.example.demo.domain.Classroom;
 import com.example.demo.domain.Episode;
 import com.example.demo.domain.Tutorial;
+import com.example.demo.dto.Rate;
 import com.example.demo.repository.TutorialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,4 +37,8 @@ public class TutorialService {
     public List<Tutorial> findAll() {
         return tutorialRepository.findAllByOrderByIdDesc();
     };
+
+    public Tutorial rate(Rate rate) {
+        return tutorialRepository.rate();
+    }
 }

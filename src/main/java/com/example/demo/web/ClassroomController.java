@@ -2,6 +2,7 @@ package com.example.demo.web;
 
 import com.example.demo.domain.Classroom;
 import com.example.demo.domain.Enrolled;
+import com.example.demo.dto.Rate;
 import com.example.demo.service.ClassroomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -60,4 +61,11 @@ public class ClassroomController {
     public long countEnrolledUsers(@PathVariable long id) {
         return classroomService.countEnrolledUsers(id);
     }
+
+    @RequestMapping(value="/{id}/rate", method = RequestMethod.POST)
+    @ResponseBody
+    public Classroom rate(@RequestBody Rate rate) {
+        return classroomService.rate(rate);
+    }
+
 }

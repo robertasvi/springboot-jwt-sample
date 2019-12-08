@@ -1,6 +1,8 @@
 package com.example.demo.web;
 
+import com.example.demo.domain.Classroom;
 import com.example.demo.domain.Quiz;
+import com.example.demo.dto.Rate;
 import com.example.demo.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -51,4 +53,11 @@ public class QuizController {
         Quiz existed = this.quizService.findById(id);
         quizService.delete(existed);
     }
+
+    @RequestMapping(value="/{id}/rate", method = RequestMethod.POST)
+    @ResponseBody
+    public Quiz rate(@RequestBody Rate rate) {
+        return quizService.rate(rate);
+    }
+
 }

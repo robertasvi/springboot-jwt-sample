@@ -1,7 +1,9 @@
 package com.example.demo.web;
 
+import com.example.demo.domain.Classroom;
 import com.example.demo.domain.Episode;
 import com.example.demo.domain.Tutorial;
+import com.example.demo.dto.Rate;
 import com.example.demo.service.TutorialService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -58,4 +60,11 @@ public class TutorialController {
         Tutorial existed = this.tutorialService.findById(id);
         tutorialService.delete(existed);
     }
+
+    @RequestMapping(value="/{id}/rate", method = RequestMethod.POST)
+    @ResponseBody
+    public Tutorial rate(@RequestBody Rate rate) {
+        return tutorialService.rate(rate);
+    }
+
 }

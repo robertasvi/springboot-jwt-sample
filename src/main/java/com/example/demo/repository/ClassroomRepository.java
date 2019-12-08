@@ -12,5 +12,6 @@ import java.util.Set;
 public interface ClassroomRepository  extends JpaRepository<Classroom, Long> {
     Classroom findById(long id);
     List<Classroom> findAllByOrderByIdDesc();
+    Classroom rate();
 }
 

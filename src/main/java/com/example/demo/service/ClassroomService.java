@@ -2,13 +2,13 @@ package com.example.demo.service;
 
 import com.example.demo.domain.Classroom;
 import com.example.demo.domain.Enrolled;
+import com.example.demo.dto.Rate;
 import com.example.demo.repository.ClassroomRepository;
 import com.example.demo.repository.EnrolledRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Set;
 
 @Service
 public class ClassroomService {
@@ -42,4 +42,8 @@ public class ClassroomService {
     public List<Classroom> findAll() {
         return classroomRepository.findAllByOrderByIdDesc();
     };
+
+    public Classroom rate(Rate rate) {
+        return classroomRepository.rate();
+    }
 }

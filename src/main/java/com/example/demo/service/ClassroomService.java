@@ -44,6 +44,6 @@ public class ClassroomService {
     };
 
     public Classroom rate(Rate rate) {
-        return classroomRepository.rate();
+        return classroomRepository.rate(rate.getSourceId(), rate.getValue());
     }
 }

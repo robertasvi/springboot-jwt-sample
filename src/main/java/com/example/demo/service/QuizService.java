@@ -1,6 +1,5 @@
 package com.example.demo.service;
 
-import com.example.demo.domain.Classroom;
 import com.example.demo.domain.Quiz;
 import com.example.demo.dto.Rate;
 import com.example.demo.repository.QuizRepository;
@@ -36,6 +35,6 @@ public class QuizService {
     };
 
     public Quiz rate(Rate rate) {
-        return quizRepository.rate();
+        return quizRepository.rate(rate.getSourceId(), rate.getValue());
     }
 }

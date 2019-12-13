@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Set;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -34,6 +33,12 @@ public class ClassroomController {
     @ResponseBody
     public Classroom findById(@PathVariable long id) {
         return classroomService.findById(id);
+    }
+
+    @RequestMapping(value="/user/{id}", method=RequestMethod.GET)
+    @ResponseBody
+    public List<Classroom> findByUserId(@PathVariable long id) {
+        return classroomService.findByUserId(id);
     }
 
     @RequestMapping(value="/enrolled/{id}", method=RequestMethod.GET)

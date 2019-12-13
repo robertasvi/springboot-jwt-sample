@@ -30,16 +30,12 @@ public class User implements UserDetails, Serializable {
     String title;
     String firstname;
     String surname;
-    long birthday;
     private String username;
     private String password;
     String photo;
     String about;
     String email;
     String phone;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
-    @JoinColumn(name = "language_id")
-    Language language; // Handled from UI preference
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "country_id")
     Country country;

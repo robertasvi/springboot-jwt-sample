@@ -29,4 +29,10 @@ public class Classroom implements Serializable {
     Set<Assignment> assignments;
     Double rate;
     long created;
+
+    public Classroom(long id, String name, String description) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+    }
 }

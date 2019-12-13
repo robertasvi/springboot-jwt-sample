@@ -40,6 +40,12 @@ public class UserController {
         return userService.findAll();
     }
 
+    @RequestMapping(value="/search/{keyword}", method=RequestMethod.GET)
+    @ResponseBody
+    public List<User> findByKeyword(@PathVariable String keyword) {
+        return userService.findByKeyword(keyword);
+    }
+
     @RequestMapping(value="/company/{id}", method=RequestMethod.GET)
     @ResponseBody
     public List<User> findByCompanyId(@PathVariable long id) {

@@ -6,6 +6,9 @@ import com.example.demo.dto.Rate;
 import com.example.demo.repository.ClassroomRepository;
 import com.example.demo.repository.EnrolledRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,14 +22,17 @@ public class ClassroomService {
     @Autowired
     EnrolledRepository enrolledRepository;
 
+    @CachePut(value = "classroom", key = "#classroom.id")
     public Classroom save(Classroom classroom) {
         return classroomRepository.save(classroom);
     }
 
+    @CacheEvict(value = "classroom", key = "#classroom.id")
     public void delete(Classroom classroom) {
         classroomRepository.delete(classroom);
     }
 
+    @Cacheable(value = "classroom", key = "#id")
     public Classroom findById(long id) {
         return classroomRepository.findById(id);
     };
@@ -38,6 +44,10 @@ public class ClassroomService {
     public long countEnrolledUsers(long id) {
         return enrolledRepository.countEnrolledUsers(id);
     };
+
+    public List<Classroom> findByUserId(long id) {
+        return classroomRepository.findByUserId(id);
+    }
 
     public List<Classroom> findAll() {
         return classroomRepository.findAllByOrderByIdDesc();

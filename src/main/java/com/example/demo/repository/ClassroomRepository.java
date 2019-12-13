@@ -16,5 +16,11 @@ public interface ClassroomRepository  extends JpaRepository<Classroom, Long> {
 
     @Query(value = "UPDATE classroom c SET c.rate = (c.rate + :rate) / 2 WHERE c.classroom_id = :classroom_id", nativeQuery = true)
     Classroom rate(@Param("classroom_id") long id, @Param("rate") Double rate);
+
+    @Query(value = "SELECT c.id, c.name, c.description, c.course_id, c.rate, c.score, c.created FROM enrolled e " +
+            "JOIN enrolled_users eu ON e.id = eu.enrolled_id " +
+            "JOIN classroom c ON c.id =  e.classroom_id " +
+            "WHERE eu.users_id = :user_id ", nativeQuery = true)
+    List<Classroom> findByUserId(@Param("user_id") long id);
 }
 

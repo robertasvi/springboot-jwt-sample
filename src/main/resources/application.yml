@@ -12,7 +12,7 @@ spring:
       FAIL_ON_IGNORED_PROPERTIES: false
       FAIL_ON_UNKNOWN_PROPERTIES: false
       ACCEPT_SINGLE_VALUE_AS_ARRAY: true
-    default-property-inclusion: non_empty 
+    default-property-inclusion: non_empty
 
 
   datasource:

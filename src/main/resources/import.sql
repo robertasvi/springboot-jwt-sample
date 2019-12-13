@@ -3,10 +3,10 @@ INSERT INTO role (id, name, created) VALUES (1,'Default',0);
 INSERT INTO country (id, code, name) VALUES (1,'LT','Lithuania');
 INSERT INTO language (id, code, name) VALUES (1,'LT','Lietuviu');
 
-INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, country_id, group_id, role_id) VALUES (1, '','',0,'assets/img/avatars/9.png','admin@admin.com','admin', 0,'password','','admin','Mr','admin',1,1,1);
-INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, country_id, group_id, role_id) VALUES (2, '','',0,'assets/img/avatars/9.png','user@user.com','user',0,'password','','user','Mr','user',1,1,1);
-INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, country_id, group_id, role_id) VALUES (3, '','',0,'assets/img/avatars/9.png','audit@audit.com','audit', 0,'password','','audit','Mr','audit',1,1,1);
-INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, country_id, group_id, role_id) VALUES (4, '','',0,'assets/img/avatars/9.png','system@system.com','system',0,'password','','system','Mr','system',1,1,1);
+INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, group_id, role_id) VALUES (1, '','',0,'assets/img/avatars/9.png','admin@admin.com','admin', 0,'password','','admin','Mr','admin',1,1);
+INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, group_id, role_id) VALUES (2, '','',0,'assets/img/avatars/9.png','user@user.com','user',0,'password','','user','Mr','user',1,1);
+INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, group_id, role_id) VALUES (3, '','',0,'assets/img/avatars/9.png','audit@audit.com','audit', 0,'password','','audit','Mr','audit',1,1);
+INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, group_id, role_id) VALUES (4, '','',0,'assets/img/avatars/9.png','system@system.com','system',0,'password','','system','Mr','system',1,1);
 
 INSERT INTO course (id, author, cover, created, description, is_supported, name, price, rate, version) VALUES (1,'Sam Smith Jr.','http://',0,'Something to train and master',1,'Important Training',0,0,'1.0')
 INSERT INTO quiz (id, created, description, name, rate, version, course_id) VALUES (1,0,'','Quiz 2020',0,'1.0',1);

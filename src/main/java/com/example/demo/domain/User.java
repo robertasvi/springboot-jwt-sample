@@ -36,13 +36,7 @@ public class User implements UserDetails, Serializable {
     String about;
     String email;
     String phone;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
-    @JoinColumn(name = "country_id")
-    Country country;
     String address;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
-    @JoinColumn(name = "company_id")
-    Company company;
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "role_id")
     Role role;

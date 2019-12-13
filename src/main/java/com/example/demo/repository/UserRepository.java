@@ -24,7 +24,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
     List<User> findByKeyword(@Param("keyword") String keyword);
 
     List<User> findAllByOrderByIdDesc();
-
-    List<User> findByCompanyId(long id);
-
 }

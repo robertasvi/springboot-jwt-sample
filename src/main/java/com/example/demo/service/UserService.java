@@ -38,8 +38,4 @@ public class UserService {
     public List<User> findAll() {
         return userRepository.findAllByOrderByIdDesc();
     };
-
-    public List<User> findByCompanyId(long id) {
-        return userRepository.findByCompanyId(id);
-    };
 }

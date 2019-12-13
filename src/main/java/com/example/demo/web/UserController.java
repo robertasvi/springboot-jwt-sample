@@ -46,12 +46,6 @@ public class UserController {
         return userService.findByKeyword(keyword);
     }
 
-    @RequestMapping(value="/company/{id}", method=RequestMethod.GET)
-    @ResponseBody
-    public List<User> findByCompanyId(@PathVariable long id) {
-        return userService.findByCompanyId(id);
-    }
-
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
     @ResponseBody
     public void delete(@PathVariable long id) {

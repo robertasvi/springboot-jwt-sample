@@ -7,19 +7,17 @@ INSERT INTO user (id, about, address, created, photo, email, firstname, logged, 
 INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, group_id, role_id) VALUES (2, '','',0,'assets/img/avatars/9.png','user@user.com','user',0,'password','','user','Mr','user',1,1);
 INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, group_id, role_id) VALUES (3, '','',0,'assets/img/avatars/9.png','audit@audit.com','audit', 0,'password','','audit','Mr','audit',1,1);
 INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, group_id, role_id) VALUES (4, '','',0,'assets/img/avatars/9.png','system@system.com','system',0,'password','','system','Mr','system',1,1);
+INSERT INTO user (id, about, address, created, photo, email, firstname, logged, password, phone, surname, title, username, group_id, role_id) VALUES (5, '','',0,'assets/img/avatars/9.png','angular@angular.com','angular',0,'password','','angular','Mr','client',1,1);
 
 INSERT INTO course (id, author, cover, created, description, is_supported, name, price, rate, version) VALUES (1,'Sam Smith Jr.','http://',0,'Something to train and master',1,'Important Training',0,0,'1.0')
 INSERT INTO quiz (id, created, description, name, rate, version, course_id) VALUES (1,0,'','Quiz 2020',0,'1.0',1);
-INSERT INTO tutorial (id, created, description, name, rate, version, course_id) VALUES (1,0,'','Quiz 2020',0,'1.0',1);
-
-INSERT INTO material (id, created, media, name, size, type) VALUES (1,0,'http://','Video material 2020',200,'.mpg');
-INSERT INTO episode (time, material_id) VALUES (30,1);
-INSERT INTO episode (time, material_id) VALUES (180,1);
-INSERT INTO episode (time, material_id) VALUES (360,1);
-INSERT INTO episode (time, material_id) VALUES (780,1);
-INSERT INTO episode (time, material_id) VALUES (920,1);
-
-INSERT INTO tutorial_materials (tutorial_id, materials_id) VALUES (1,1);
+INSERT INTO tutorial (id, created, description, name, rate, version, course_id) VALUES (1,0,'','Tutorial 2020',0,'1.0',1);
+INSERT INTO file (id, created, directory, name, size, type) VALUES (1, 0, 'video', '24.mp4', 120, 'video/mp4');
+INSERT INTO file (id, created, directory, name, size, type) VALUES (2, 0, 'video', '24.mp4', 120, 'video/mp4');
+INSERT INTO file (id, created, directory, name, size, type) VALUES (3, 0, 'video', '24.mp4', 120, 'video/mp4');
+INSERT INTO tutorial_materials (materials_id, tutorial_id) VALUES (1,1);
+INSERT INTO tutorial_materials (materials_id, tutorial_id) VALUES (2,1);
+INSERT INTO tutorial_materials (materials_id, tutorial_id) VALUES (3,1);
 
 INSERT INTO assignment (id, duration, start, end) VALUES (1,0,0,0);
 INSERT INTO assignment (id, duration, start, end) VALUES (2,0,0,0);

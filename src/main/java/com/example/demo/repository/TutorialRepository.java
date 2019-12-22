@@ -1,6 +1,5 @@
 package com.example.demo.repository;
 
-import com.example.demo.domain.Episode;
 import com.example.demo.domain.Tutorial;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

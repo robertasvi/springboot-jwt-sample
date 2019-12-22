@@ -1,7 +1,5 @@
 package com.example.demo.web;
 
-import com.example.demo.domain.Classroom;
-import com.example.demo.domain.Episode;
 import com.example.demo.domain.Tutorial;
 import com.example.demo.dto.Rate;
 import com.example.demo.service.TutorialService;
@@ -40,12 +38,6 @@ public class TutorialController {
     @ResponseBody
     public Tutorial findByCourseId(@PathVariable long id) {
         return tutorialService.findByCourseId(id);
-    }
-
-    @RequestMapping(value="/material/{id}/episodes", method=RequestMethod.GET)
-    @ResponseBody
-    public List<Episode> findByMaterialId(@PathVariable long id) {
-        return tutorialService.findByMaterialId(id);
     }
 
     @RequestMapping(method=RequestMethod.GET)

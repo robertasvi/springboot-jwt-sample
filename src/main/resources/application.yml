@@ -59,3 +59,8 @@ logging:
     console:
       enabled: true
       path: /h2
+
+  spring:
+    http:
+      multipart:
+        enabled: true

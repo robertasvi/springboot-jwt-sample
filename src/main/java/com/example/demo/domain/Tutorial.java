@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 @Data
@@ -26,7 +26,7 @@ public class Tutorial implements Serializable {
     String description;
     Double version;
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    Set<Material> materials;
+    List<File> materials;
     Double rate;
     long created;
 }

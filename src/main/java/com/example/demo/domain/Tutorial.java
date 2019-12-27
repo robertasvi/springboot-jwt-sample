@@ -25,7 +25,7 @@ public class Tutorial implements Serializable {
     String name;
     String description;
     Double version;
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     List<File> materials;
     Double rate;
     long created;

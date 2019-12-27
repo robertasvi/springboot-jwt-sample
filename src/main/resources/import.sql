@@ -11,6 +11,25 @@ INSERT INTO user (id, about, address, created, photo, email, firstname, logged, 
 
 INSERT INTO course (id, author, cover, created, description, is_supported, name, price, rate, version) VALUES (1,'Sam Smith Jr.','http://',0,'Something to train and master',1,'Important Training',0,0,'1.0')
 INSERT INTO quiz (id, created, description, name, rate, version, course_id) VALUES (1,0,'','Quiz 2020',0,'1.0',1);
+
+INSERT INTO question (id, media, text) VALUES (1,'','What is Avialearn?');
+INSERT INTO quiz_questions (quiz_id, questions_id) VALUES (1,1);
+INSERT INTO answer (id, is_correct, text) VALUES (1,0,'I don\'t know');
+INSERT INTO answer (id, is_correct, text) VALUES (2,0,'Computer based learning system');
+INSERT INTO answer (id, is_correct, text) VALUES (3,0,'Learning management system');
+INSERT INTO answer (id, is_correct, text) VALUES (4,0,'Platform-as-a-Service (PaaS)');
+INSERT INTO question_answers (question_id, answers_id) VALUES (1,1);
+INSERT INTO question_answers (question_id, answers_id) VALUES (1,2);
+INSERT INTO question_answers (question_id, answers_id) VALUES (1,3);
+INSERT INTO question_answers (question_id, answers_id) VALUES (1,4);
+
+INSERT INTO question (id, media, text) VALUES (2,'','What is PaaS?');
+INSERT INTO quiz_questions (quiz_id, questions_id) VALUES (1,2);
+INSERT INTO answer (id, is_correct, text) VALUES (5,0,'Personal automated aviation System');
+INSERT INTO answer (id, is_correct, text) VALUES (6,0,'Platform as a Service');
+INSERT INTO question_answers (question_id, answers_id) VALUES (2,5);
+INSERT INTO question_answers (question_id, answers_id) VALUES (2,6);
+
 INSERT INTO tutorial (id, created, description, name, rate, version, course_id) VALUES (1,0,'','Tutorial 2020',0,'1.0',1);
 INSERT INTO file (id, created, directory, name, size, type) VALUES (1, 0, 'video', '24.mp4', 120, 'video/mp4');
 INSERT INTO file (id, created, directory, name, size, type) VALUES (2, 0, 'video', '24.mp4', 120, 'video/mp4');

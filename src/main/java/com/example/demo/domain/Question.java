@@ -21,7 +21,8 @@ public class Question implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String text;
-    String media;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    File image;
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     List<Answer> answers;
 }

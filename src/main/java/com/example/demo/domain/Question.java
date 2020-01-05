@@ -20,6 +20,7 @@ public class Question implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
+    @Lob
     String text;
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     File image;

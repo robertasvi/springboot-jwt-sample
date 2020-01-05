@@ -34,6 +34,10 @@ public class TutorialService {
         return tutorialRepository.findAllByOrderByIdDesc();
     };
 
+    public List<Tutorial> findByCourseIsNull() {
+        return tutorialRepository.findByCourseIsNull();
+    };
+
     public Tutorial rate(Rate rate) {
         return tutorialRepository.rate(rate.getSourceId(), rate.getValue());
     }

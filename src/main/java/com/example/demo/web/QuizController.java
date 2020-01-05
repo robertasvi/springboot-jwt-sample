@@ -47,6 +47,12 @@ public class QuizController {
         return quizService.findAll();
     }
 
+    @RequestMapping(value="/available", method=RequestMethod.GET)
+    @ResponseBody
+    public List<Quiz> findByCourseIsNull() {
+        return quizService.findByCourseIsNull();
+    }
+
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
     @ResponseBody
     public void delete(@PathVariable long id) {

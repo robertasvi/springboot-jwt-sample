@@ -34,6 +34,10 @@ public class QuizService {
         return quizRepository.findAllByOrderByIdDesc();
     };
 
+    public List<Quiz> findByCourseIsNull() {
+        return quizRepository.findByCourseIsNull();
+    };
+
     public Quiz rate(Rate rate) {
         return quizRepository.rate(rate.getSourceId(), rate.getValue());
     }

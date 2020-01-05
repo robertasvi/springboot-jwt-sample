@@ -2,11 +2,11 @@ package com.example.demo.service;
 
 import com.example.demo.domain.Course;
 import com.example.demo.repository.CourseRepository;
+import com.example.demo.repository.QuizRepository;
+import com.example.demo.repository.TutorialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -16,17 +16,32 @@ public class CourseService {
     @Autowired
     CourseRepository courseRepository;
 
-    @CachePut(value = "course", key = "#course.id")
+    @Autowired
+    TutorialRepository tutorialRepository;
+
+    @Autowired
+    QuizRepository quizRepository;
+
+    @Transactional
     public Course save(Course course) {
-        return courseRepository.save(course);
+        Course saved = courseRepository.save(course);
+
+        tutorialRepository.removeCourse(saved.getId());
+        tutorialRepository.updateTutorialCourse(saved.getId(), course.getTutorial());
+
+        quizRepository.removeCourse(saved.getId());
+        quizRepository.updateQuizCourse(saved.getId(), course.getQuiz());
+
+        return saved;
     }
 
-    @CacheEvict(value = "course", key = "#course.id")
+    @Transactional
     public void delete(Course course) {
+        tutorialRepository.removeCourse(course.getId());
+        quizRepository.removeCourse(course.getId());
         courseRepository.delete(course);
     }
 
-    @Cacheable(value = "classrooms", key = "#id")
     public Course findById(long id) {
         return courseRepository.findById(id);
     };

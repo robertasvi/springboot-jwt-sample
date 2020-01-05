@@ -23,6 +23,7 @@ public class Tutorial implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER)
     Course course;
     String name;
+    @Lob
     String description;
     Double version;
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)

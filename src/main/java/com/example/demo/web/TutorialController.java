@@ -46,6 +46,12 @@ public class TutorialController {
         return tutorialService.findAll();
     }
 
+    @RequestMapping(value="/available", method=RequestMethod.GET)
+    @ResponseBody
+    public List<Tutorial> findByCourseIsNull() {
+        return tutorialService.findByCourseIsNull();
+    }
+
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
     @ResponseBody
     public void delete(@PathVariable long id) {

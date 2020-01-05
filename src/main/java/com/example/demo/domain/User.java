@@ -33,6 +33,7 @@ public class User implements UserDetails, Serializable {
     private String username;
     private String password;
     String photo;
+    @Lob
     String about;
     String email;
     String phone;

@@ -21,11 +21,18 @@ public class Course implements Serializable {
     long id;
     String name;
     String author;
-    String cover;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    File cover;
+    @Lob
     String description;
     Double version;
     boolean isSupported;
+    boolean isMarketplaced;
     Double price;
     Double rate;
+    @Transient
+    long tutorial;
+    @Transient
+    long quiz;
     long created;
 }

@@ -19,9 +19,8 @@ public class Assignment implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    Type type;
     long duration;
+    int score;
     long start;
     long end;
 }

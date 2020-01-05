@@ -21,12 +21,13 @@ public class Classroom implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String name;
+    @Lob
     String description;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.EAGER)
     Course course;
-    int score;
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     Set<Assignment> assignments;
+    String note;
     Double rate;
     long created;
 

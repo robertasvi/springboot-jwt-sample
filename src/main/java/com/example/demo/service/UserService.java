@@ -33,6 +33,11 @@ public class UserService {
         return userRepository.findById(id);
     };
 
+    public User findByToken(String token) {
+        // Check cache
+        return userRepository.findById(1);
+    };
+
     public List<User> findByKeyword(String keyword) {
         return userRepository.findByKeyword(keyword);
     };

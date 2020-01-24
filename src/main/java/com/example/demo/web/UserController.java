@@ -35,6 +35,13 @@ public class UserController {
         return userService.findById(id);
     }
 
+    @RequestMapping(value="/profile", method=RequestMethod.GET)
+    @ResponseBody
+    public User findByToken(@RequestHeader(value="token") String token) {
+        return userService.findByToken(token);
+    }
+
+
     @RequestMapping(method=RequestMethod.GET)
     @ResponseBody
     public List<User> findAll() {

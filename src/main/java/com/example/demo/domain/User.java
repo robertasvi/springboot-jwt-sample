@@ -48,7 +48,6 @@ public class User implements UserDetails, Serializable {
     @JoinColumn(name = "group_id")
     CustomGroup group;
     boolean isApproved;
-    String token;
     long logged;
     long created;
 

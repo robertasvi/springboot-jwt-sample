@@ -22,17 +22,14 @@ public class ClassroomService {
     @Autowired
     EnrolledRepository enrolledRepository;
 
-    @CachePut(value = "classroom", key = "#classroom.id")
     public Classroom save(Classroom classroom) {
         return classroomRepository.save(classroom);
     }
 
-    @CacheEvict(value = "classroom", key = "#classroom.id")
     public void delete(Classroom classroom) {
         classroomRepository.delete(classroom);
     }
 
-    @Cacheable(value = "classroom", key = "#id")
     public Classroom findById(long id) {
         return classroomRepository.findById(id);
     };

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,17 +17,18 @@ public class UserService {
     @Autowired
     UserRepository userRepository;
 
-    @CachePut(value = "user", key = "#user.id")
+    @Autowired
+    PasswordEncoder passwordEncoder;
+
     public User save(User user) {
+        user.setPassword(this.passwordEncoder.encode(user.getPassword()));
         return userRepository.save(user);
     }
 
-    @CacheEvict(value = "user", key = "#user.id")
     public void delete(User user) {
         userRepository.delete(user);
     }
 
-    @Cacheable(value = "user", key = "#id")
     public User findById(long id) {
         return userRepository.findById(id);
     };

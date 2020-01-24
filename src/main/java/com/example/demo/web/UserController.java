@@ -19,6 +19,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public User add(@RequestBody User user) {
+        System.out.println(user.getPassword());
         return userService.save(user);
     }
 

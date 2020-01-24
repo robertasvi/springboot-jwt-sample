@@ -20,9 +20,13 @@ public class Company implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     String name;
-    String address;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    File logo;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    Country country;
     String email;
     String phone;
     String web;
+    boolean isApproved;
     long created;
 }

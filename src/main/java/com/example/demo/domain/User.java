@@ -1,5 +1,7 @@
 package com.example.demo.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonSetter;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -30,23 +32,25 @@ public class User implements UserDetails, Serializable {
     String title;
     String firstname;
     String surname;
-    private String username;
     private String password;
-    String photo;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    File photo;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    Company company;
     @Lob
     String about;
     String email;
     String phone;
-    String address;
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "role_id")
     Role role;
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "group_id")
     CustomGroup group;
+    boolean isApproved;
+    String token;
     long logged;
     long created;
-
 
     @ElementCollection(fetch = FetchType.EAGER)
     @Builder.Default
@@ -57,14 +61,20 @@ public class User implements UserDetails, Serializable {
         return this.roles.stream().map(SimpleGrantedAuthority::new).collect(toList());
     }
 
+    @JsonSetter
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
+    @JsonIgnore
     public String getPassword() {
         return this.password;
     }
 
     @Override
     public String getUsername() {
-        return this.username;
+        return this.email;
     }
 
     @Override

@@ -48,6 +48,9 @@ spring:
     jpa:
       repositories.enabled: true
 
+jwt:
+  secret: javainuse
+
 logging:
   level:
     org.springframework.web: INFO

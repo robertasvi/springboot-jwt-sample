@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -37,7 +38,7 @@ public class UserController {
 
     @RequestMapping(value="/profile", method=RequestMethod.GET)
     @ResponseBody
-    public User findByToken(@RequestHeader(value="token") String token) {
+    public Optional<User> findByToken(@RequestHeader(value="token") String token) {
         return userService.findByToken(token);
     }
 

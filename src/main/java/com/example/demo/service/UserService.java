@@ -1,6 +1,8 @@
 package com.example.demo.service;
 
+import com.example.demo.domain.SessionToken;
 import com.example.demo.domain.User;
+import com.example.demo.repository.SessionTokenRepository;
 import com.example.demo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -21,6 +23,9 @@ public class UserService {
     @Autowired
     PasswordEncoder passwordEncoder;
 
+    @Autowired
+    SessionTokenRepository sessionTokenRepository;
+
     public User save(User user) {
         user.setPassword(this.passwordEncoder.encode(user.getPassword()));
         return userRepository.save(user);
@@ -38,9 +43,10 @@ public class UserService {
         return userRepository.findByEmail(email);
     };
 
-    public User findByToken(String token) {
+    public Optional<User> findByToken(String token) {
         // Check cache
-        return userRepository.findById(1);
+        SessionToken st = sessionTokenRepository.findByToken(token);
+        return userRepository.findByEmail(st.getEmail());
     };
 
     public List<User> findByKeyword(String keyword) {

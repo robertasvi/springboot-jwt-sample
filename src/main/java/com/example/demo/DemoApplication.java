@@ -21,6 +21,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import java.util.Optional;
 
 @SpringBootApplication
+@EnableCaching
 public class DemoApplication {
 
     public static void main(String[] args) {

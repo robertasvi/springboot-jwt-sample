@@ -2,19 +2,17 @@ package com.example.demo.web;
 
 import com.example.demo.domain.SessionToken;
 import com.example.demo.domain.User;
+import com.example.demo.dto.UserReg;
 import com.example.demo.repository.SessionTokenRepository;
-import com.example.demo.repository.UserRepository;
 import com.example.demo.security.jwt.JwtTokenProvider;
 import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 import static org.springframework.http.ResponseEntity.ok;
 
@@ -63,6 +60,16 @@ public class AuthenticationController {
 
         } catch (AuthenticationException e) {
             throw new BadCredentialsException("Invalid username/password supplied");
+        }
+    }
+
+    @PostMapping("/signup")
+    public User signup(@RequestBody UserReg user) {
+        // Check if user does not exist
+        if(!userService.findByEmail(user.getEmail()).isPresent()) {
+            return userService.signup(user);
+        } else {
+            return null;
         }
     }
 }

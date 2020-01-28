@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.domain.SessionToken;
 import com.example.demo.domain.User;
+import com.example.demo.dto.UserReg;
 import com.example.demo.repository.SessionTokenRepository;
 import com.example.demo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,8 +28,28 @@ public class UserService {
     SessionTokenRepository sessionTokenRepository;
 
     public User save(User user) {
-        user.setPassword(this.passwordEncoder.encode(user.getPassword()));
+        return userRepository.save(verifyUserPassword(user));
+    }
+
+    private User verifyUserPassword(User user) {
+        if(user.getId()!=0) {
+            User existingUser = userRepository.findById(user.getId());
+            user.setPassword(existingUser.getPassword());
+        } else {
+            user.setPassword(this.passwordEncoder.encode("password"));
+        }
+        return user;
+    }
+
+    public User signup(UserReg newUser) {
+        User user = new User();
+        user.setEmail(newUser.getEmail());
+        user.setPassword(this.passwordEncoder.encode(newUser.getPassword()));
         return userRepository.save(user);
+    }
+
+    public void savePassword(String password) {
+        // user.setPassword(this.passwordEncoder.encode(user.getPassword()));
     }
 
     public void delete(User user) {

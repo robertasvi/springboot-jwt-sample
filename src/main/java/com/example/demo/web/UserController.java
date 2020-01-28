@@ -17,10 +17,12 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    /*
+    ALL METHODS, ESPECIALLY THAT UPDATES OR SAVES DATA, MUST HAVE TOKEN AUTHORIZATION MODEL
+     */
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public User add(@RequestBody User user) {
-        System.out.println(user.getPassword());
         return userService.save(user);
     }
 

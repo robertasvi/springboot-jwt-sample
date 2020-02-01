@@ -3,11 +3,11 @@ INSERT INTO role (id, name, created) VALUES (1,'Default',0);
 INSERT INTO country (id, code, name) VALUES (1,'LT','Lithuania');
 INSERT INTO language (id, code, name) VALUES (1,'LT','Lietuviu');
 
-INSERT INTO user (id, about, created, photo_id, email, firstname, logged, password, phone, surname, title, group_id, role_id, company_id, is_approved, is_admin) VALUES (1, '',0,null,'admin@admin.com','admin', 0,'password','','admin','Mr',1,1,null,0,0);
-INSERT INTO user (id, about, created, photo_id, email, firstname, logged, password, phone, surname, title, group_id, role_id, company_id, is_approved, is_admin) VALUES (2, '',0,null,'user@user.com','user',0,'password','','user','Mr',1,1,null,0,0);
-INSERT INTO user (id, about, created, photo_id, email, firstname, logged, password, phone, surname, title, group_id, role_id, company_id, is_approved, is_admin) VALUES (3, '',0,null,'audit@audit.com','audit', 0,'password','','audit','Mr',1,1,null,0,0);
-INSERT INTO user (id, about, created, photo_id, email, firstname, logged, password, phone, surname, title, group_id, role_id, company_id, is_approved, is_admin) VALUES (4, '',0,null,'system@system.com','system',0,'password','','system','Mr',1,1,null,0,0);
-INSERT INTO user (id, about, created, photo_id, email, firstname, logged, password, phone, surname, title, group_id, role_id, company_id, is_approved, is_admin) VALUES (5, '',0,null,'angular@angular.com','angular',0,'password','','angular','Mr',1,1,null,0,0);
+INSERT INTO user (id, about, created, photo_id, email, firstname, logged, password, phone, surname, title, group_id, role_id, company_id, approved, sys_role) VALUES (1, '',0,null,'admin@admin.com','admin', 0,'{bcrypt}$2a$10$tDk/pDvQcXjN8qghkoV7bOEjLWmR/u8SKS8v36IaPBLdukgMLjmCm','','admin','Mr',1,1,null,1,'ADMIN');
+INSERT INTO user (id, about, created, photo_id, email, firstname, logged, password, phone, surname, title, group_id, role_id, company_id, approved, sys_role) VALUES (2, '',0,null,'user@user.com','user',0,'password','','user','Mr',1,1,null,1,'USER');
+INSERT INTO user (id, about, created, photo_id, email, firstname, logged, password, phone, surname, title, group_id, role_id, company_id, approved, sys_role) VALUES (3, '',0,null,'audit@audit.com','audit', 0,'password','','audit','Mr',1,1,null,0,'USER');
+INSERT INTO user (id, about, created, photo_id, email, firstname, logged, password, phone, surname, title, group_id, role_id, company_id, approved, sys_role) VALUES (4, '',0,null,'system@system.com','system',0,'password','','system','Mr',1,1,null,0,'ADMIN');
+INSERT INTO user (id, about, created, photo_id, email, firstname, logged, password, phone, surname, title, group_id, role_id, company_id, approved, sys_role) VALUES (5, '',0,null,'angular@angular.com','angular',0,'password','','angular','Mr',1,1,null,0,'USER');
 
 INSERT INTO course (id, author, cover_id, created, description, is_supported, is_marketplaced, name, price, rate, version) VALUES (1,'Sam Smith Jr.',null,0,'Something to train and master',1,0,'Important Training',0,0,'1.0')
 INSERT INTO quiz (id, created, description, name, rate, version, course_id) VALUES (1,0,'','Quiz 2020',0,'1.0',null);

@@ -22,4 +22,8 @@ public class CustomGroup implements Serializable {
     long id;
     String name;
     String created;
+
+    public CustomGroup(long id) {
+        this.id = id;
+    }
 }

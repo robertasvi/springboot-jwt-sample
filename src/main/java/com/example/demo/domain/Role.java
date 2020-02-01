@@ -22,4 +22,8 @@ public class Role implements Serializable {
     long id;
     String name;
     String created;
+
+    public Role(long id) {
+        this.id = id;
+    }
 }

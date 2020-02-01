@@ -38,6 +38,19 @@ public class UserController {
         return userService.findById(id);
     }
 
+    @RequestMapping(value="/approval", method=RequestMethod.GET)
+    @ResponseBody
+    public List<User> findNotApproved() {
+        return userService.findByApproved(false);
+    }
+
+    @RequestMapping(value="/approve/{id}", method=RequestMethod.POST)
+    @ResponseBody
+    public void approve(@PathVariable long id) {
+        userService.approve(id);
+    }
+
+
     @RequestMapping(value="/profile", method=RequestMethod.GET)
     @ResponseBody
     public Optional<User> findByToken(@RequestHeader(value="token") String token) {
@@ -47,9 +60,7 @@ public class UserController {
 
     @RequestMapping(method=RequestMethod.GET)
     @ResponseBody
-    public List<User> findAll() {
-        return userService.findAll();
-    }
+    public List<User> findByApproved() { return userService.findByApproved(true); }
 
     @RequestMapping(value="/search/{keyword}", method=RequestMethod.GET)
     @ResponseBody

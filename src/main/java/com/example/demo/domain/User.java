@@ -2,7 +2,6 @@ package com.example.demo.domain;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -49,10 +48,11 @@ public class User implements UserDetails, Serializable {
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinColumn(name = "group_id")
     CustomGroup group;
-    boolean isApproved;
-    boolean isAdmin;
+    String sysRole;
     @JsonIgnore
     String token;
+    @JsonIgnore
+    boolean approved;
     long logged;
     long created;
 
@@ -92,17 +92,17 @@ public class User implements UserDetails, Serializable {
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return this.approved;
     }
 
     @JsonIgnore
-    public void setAdmin(boolean isAdmin) {
-        this.isAdmin = isAdmin;
+    public void setSysRole(String sysRole) {
+        this.sysRole = sysRole;
     }
 
     @JsonGetter
-    public boolean isAdmin() {
-        return this.isAdmin;
+    public String getSysRole() {
+        return this.sysRole;
     }
 
 }

@@ -29,15 +29,13 @@ public class User implements UserDetails, Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
-    String title;
+    String code;
     String firstname;
     String surname;
     @JsonIgnore
     private String password;
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     File photo;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    Company company;
     @Lob
     String about;
     String email;

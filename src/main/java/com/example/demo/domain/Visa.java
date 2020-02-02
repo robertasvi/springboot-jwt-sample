@@ -21,7 +21,7 @@ public class Visa implements Serializable {
     long id;
     @ManyToOne(fetch = FetchType.EAGER)
     Country country;
-    long valid;
+    String valid;
     @OneToOne(fetch = FetchType.EAGER)
     User user;
     String comment;

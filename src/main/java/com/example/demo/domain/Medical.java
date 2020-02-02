@@ -23,7 +23,7 @@ public class Medical implements Serializable {
     User user;
     String clinic;
     String doc;
-    long valid;
+    String valid;
     String comment;
     long created;
 

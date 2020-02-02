@@ -23,7 +23,7 @@ public class Certificate implements Serializable {
     User user;
     String org;
     String course;
-    long valid;
+    String valid;
     String comment;
     long created;
 

@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface MedicalRepository  extends JpaRepository<Medical, Long> {
     Medical findById(long id);
-    List<Medical> findByUserId(long id);
+    List<Medical> findByUserIdOrderByIdDesc(long id);
     List<Medical> findAllByOrderByIdDesc();
 
 }

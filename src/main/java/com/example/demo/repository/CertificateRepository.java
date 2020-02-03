@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface CertificateRepository  extends JpaRepository<Certificate, Long> {
     Certificate findById(long id);
-    List<Certificate> findByUserId(long id);
+    List<Certificate> findByUserIdOrderByIdDesc(long id);
     List<Certificate> findAllByOrderByIdDesc();
 
 }

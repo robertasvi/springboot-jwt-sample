@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface VisaRepository  extends JpaRepository<Visa, Long> {
     Visa findById(long id);
-    List<Visa> findByUserId(long id);
+    List<Visa> findByUserIdOrderByIdDesc(long id);
     List<Visa> findAllByOrderByIdDesc();
 
 }

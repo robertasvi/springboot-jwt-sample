@@ -20,7 +20,7 @@ public class FileService {
     @Autowired
     FileRepository fileRepository;
 
-    @Value("src/main/resources/static/")
+    @Value("${media.image.path}")
     public String absolutePath;
 
     @Value("video")
@@ -31,7 +31,7 @@ public class FileService {
         
         try {
             copyLocation = Paths
-                    .get( absolutePath + dir + java.io.File.separator + StringUtils.cleanPath(file.getOriginalFilename()));
+                    .get( absolutePath + java.io.File.separator + StringUtils.cleanPath(file.getOriginalFilename()));
             Files.copy(file.getInputStream(), copyLocation, StandardCopyOption.REPLACE_EXISTING);
         } catch (Exception e) {
             e.printStackTrace();

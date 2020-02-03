@@ -29,7 +29,7 @@ public class VisaService {
     };
 
     public List<Visa> findByUserId(long id) {
-        return visaRepository.findByUserId(id);
+        return visaRepository.findByUserIdOrderByIdDesc(id);
     };
 
     public List<Visa> findAll() {

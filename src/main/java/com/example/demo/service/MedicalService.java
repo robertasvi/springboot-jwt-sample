@@ -26,7 +26,7 @@ public class MedicalService {
     };
 
     public List<Medical> findByUserId(long id) {
-        return medicalRepository.findByUserId(id);
+        return medicalRepository.findByUserIdOrderByIdDesc(id);
     };
 
     public List<Medical> findAll() {

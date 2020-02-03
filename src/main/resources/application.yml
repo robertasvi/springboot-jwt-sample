@@ -67,3 +67,7 @@ logging:
     http:
       multipart:
         enabled: true
+
+media:
+  image:
+    path: /Users/robertas/Downloads/storage/

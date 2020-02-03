@@ -24,6 +24,7 @@ public class Medical implements Serializable {
     String clinic;
     String doc;
     String valid;
+    String name;
     String comment;
     long created;
 

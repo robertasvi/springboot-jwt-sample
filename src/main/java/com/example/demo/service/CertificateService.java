@@ -31,7 +31,7 @@ public class CertificateService {
     };
 
     public List<Certificate> findByUserId(long id) {
-        return certificateRepository.findByUserId(id);
+        return certificateRepository.findByUserIdOrderByIdDesc(id);
     };
 
     public List<Certificate> findAll() {
